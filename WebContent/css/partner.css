@@ -1,0 +1,18 @@
+.field-block {
+margin-top: 5px;
+margin-bottom: 5px;
+padding: 5px;
+}
+    
+#map_canvas {
+width: 500px;
+height: 400px;
+margin: 20px;
+background-color: #eee;
+ }
+ 
+.site-footer {
+    padding: 10px 0px;
+    background: #292929;
+    font-size: 12px;
+}
