@@ -9,8 +9,8 @@ public class Coordinate {
 	
 	/**
 	 * Creates new Coordinate.
-	 * @param lat {@link String} latitude
-	 * @param lon {@link String} longitude
+	 * @param lat - {@link String} latitude
+	 * @param lon - {@link String} longitude
 	 */
 	public Coordinate(String lat, String lon){
 		
@@ -23,16 +23,34 @@ public class Coordinate {
 		
 	}
 	
+	/**
+	 * 
+	 * @return
+	 */
 	public String getLatitude() {
 		return latitude;
 	}
 	
+	/**
+	 * 
+	 * @param latitude
+	 */
 	public void setLatitude(String latitude) {
 		this.latitude = latitude;
 	}
+	
+	/**
+	 * Returns the string value for the longitude of the {@link Coordinate}
+	 * @return longitude of the {@link Coordinate}
+	 */
 	public String getLongitude() {
 		return longitude;
 	}
+	
+	/**
+	 * Sets the longitude for the {@link Coordinate} Object. 
+	 * @param longitude
+	 */
 	public void setLongitude(String longitude) {
 		this.longitude = longitude;
 	}

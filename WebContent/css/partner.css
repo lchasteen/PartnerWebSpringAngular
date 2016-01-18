@@ -12,7 +12,7 @@ background-color: #eee;
  }
  
 .site-footer {
-    padding: 10px 0px;
-    background: #292929;
+    padding: 10px 0px 0px 0px;       
+    /* background: #292929; */
     font-size: 12px;
 }
