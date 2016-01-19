@@ -9,10 +9,8 @@ import com.partner.core.model.MeteringUnits;
 
 public class RestClient {
 	public List<Meter> getMeters(){
-		RestTemplate restTemplate = new RestTemplate();
-		//Quote quote = restTemplate.getForObject("http://gturnquist-quoters.cfapps.io/api/random", Quote.class);
-		List<Meter>meters = restTemplate.getForObject("http://localhost:8089/PartnerWeb/rest/asset/meters", MeteringUnits.class).getMeteringUnits();
-		
+		RestTemplate restTemplate = new RestTemplate();		
+		List<Meter>meters = restTemplate.getForObject("http://localhost:8089/PartnerWeb/rest/asset/meters", MeteringUnits.class).getMeteringUnits();		
 		return meters;
 	}
 }
