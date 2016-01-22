@@ -5,7 +5,7 @@
   	<body ng-app="routeApp">
   
   	 <div ng-include="'html/nav.html'"></div>
-  	<div class="container">   
+  	<div id="content" style="visibility: hidden" class="container">   
   		<div ng-include="'html/content.html'"></div>
 		<div ng-include="'footer.html'"></div>
 	</div>
@@ -17,8 +17,10 @@
 	<script src="js/AngularJS/1.4.5/angular-resource.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js"></script>
 	<script src="js/map.js"></script>        
-	<script src="js/route.js"></script>   
-	
-         
+	<script src="js/route.js"></script>
+	<script>   
+		$(window).load(function() { 
+	 	document.getElementById("content").style.visibility = "visible"; });
+	</script>     
   </body>
 </html>
