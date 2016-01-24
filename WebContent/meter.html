@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+	<header ng-include="'header.html'">                    
+	</header>  
+  	<body ng-app="routeApp">
+  
+  	 <div ng-include="'html/nav.html'"></div>
+  	<div id="content" style="visibility: hidden" class="container">   
+  		<div ng-include="'html/meterContent.html'"></div>
+		<div ng-include="'footer.html'"></div>
+	</div>
+	  	
+    <script src="js/jquery/2.1.4/jquery-2.1.4.min.js"></script>	
+	<script src="css/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+	<script src="js/AngularJS/1.4.5/angular.min.js"></script>    
+	<script src="js/AngularJS/1.4.5/angular-route.js"></script> 
+	<script src="js/AngularJS/1.4.5/angular-resource.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script src="js/map.js"></script>        
+	<script src="js/route.js"></script>
+	<script>
+		// Make sure that the page loads.
+		$(window).load(function() { 
+	 	document.getElementById("content").style.visibility = "visible"; });
+	</script>     
+  </body>
+</html>

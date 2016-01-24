@@ -16,15 +16,13 @@ public class ConfigQueryController {
 	public ConfigQueryController(){
 		// TODO stub constructor
 	}
-
 	
 	/**
-	 * 
-	 * @param model
-	 * @return
+	 * Method builds the config query form.
+	 * @param model - {@link Model}
+	 * @return {@link String} mapping to configQuery.jsp
 	 */
-    @RequestMapping(method = RequestMethod.GET)
-    // Submission will come with courtName field, also add Model to return results 
+    @RequestMapping(method = RequestMethod.GET)    
     public String setupForm(Model model) {
     	RestClient restClient = new RestClient();
     

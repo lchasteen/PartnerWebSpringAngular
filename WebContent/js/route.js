@@ -41,7 +41,7 @@
 	                       DTColumnDefBuilder.newColumnDef(2)
        ];
 	                       
-       $http.get('rest/asset/meters').success(function(data) {
+       $http.get('/assets/list/meters').success(function(data) {
     	   vm.results = data.metering_units;            
 	   });
 	    
@@ -52,7 +52,7 @@
 		
 		$scope.itemsByPage=20;	
 		
-		$http.get('rest/asset/meters').success(function(data) {
+		$http.get('/assets/list/meters').success(function(data) {
 			
 			$scope.result = data.metering_units;            
 		});
