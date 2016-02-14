@@ -2,13 +2,13 @@
 
     // create the module and name it routApp
     // also include ngRoute for all our routing needs
-    var routeApp = angular.module('routeApp', ['ngResource']);
-    //var routeApp = angular.module('routeApp', ['ui.bootstrap','ngRoute','smart-table']);
+    var routeApp = angular.module('routeApp', []);
+    //var routeApp = angular.module('routeApp', ['ngResource','smart-table']);
     
 	
 	routeApp.controller("display",  ["$scope", "$http", function($scope, $http) {
-		$http.get('rest/user').success(function(data) {
-			$scope.listperson = data.person;            
+		$http.get('http://localhost:8089/PartnerRest/users/list/all').success(function(data) {
+			$scope.persons = data.persons;            
 		});
 	}]);
 		
@@ -21,7 +21,7 @@
 	    //var u = "rest/user/search/" + $scope.lastName;
 	    $scope.complete = function(){	    	
 	    	  
-	    	$http.get("rest/user/search/" + $scope.lastName).success(function(data) {
+	    	$http.get('http://localhost:8089/PartnerRest/users/person/' + $scope.lastName).success(function(data) {
 	   			$scope.result = data;            
 	   		});	    
 	   
@@ -41,7 +41,7 @@
 	                       DTColumnDefBuilder.newColumnDef(2)
        ];
 	                       
-       $http.get('/assets/list/meters').success(function(data) {
+       $http.get('http://localhost:8089/PartnerRest/assets/list/meters').success(function(data) {
     	   vm.results = data.metering_units;            
 	   });
 	    
@@ -52,7 +52,7 @@
 		
 		$scope.itemsByPage=20;	
 		
-		$http.get('/assets/list/meters').success(function(data) {
+		$http.get('http://localhost:8089/PartnerRest/assets/list/meters').success(function(data) {
 			
 			$scope.result = data.metering_units;            
 		});

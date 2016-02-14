@@ -1,26 +1,26 @@
-  	<div class="col-md-12">
-		<!-- SHOW ERROR/SUCCESS MESSAGES --> 
-		<div id="messages" ng-show="message">{{ message }}</div>
-		
-		<!-- FORM --> 
-		<form> 
-		  <!-- NAME --> 
-		  <div id="name-group" class="form-group" ng-class="{ 'has-error' : errorName }"> 
-		    <label>Name</label> 
-		    <input type="text" name="name" class="form-control" placeholder="Bruce Wayne"> 
-		    <span class="help-block" ng-show="errorName">{{ errorName }}</span> 
-		  </div>
-		
-		  <!-- SUPERHERO NAME -->
-		  <div id="superhero-group" class="form-group" ng-class="{ 'has-error' : errorSuperhero }"> 
-		      <label>Superhero Alias</label> 
-		      <input type="text" name="superheroAlias" class="form-control" placeholder="Caped Crusader"> 
-		      <span class="help-block" ng-show="errorSuperhero">{{ errorSuperhero }}</span> 
-		  </div>
-		
-		  <!-- SUBMIT BUTTON -->
-		  <button type="submit" class="btn btn-success btn-lg btn-block">
-		      <span class="glyphicon glyphicon-flash"></span> Submit!
-		  </button>
-		</form>
+  	<div class="col-md-8">  		
+		<div class="row field-block">
+			<form>
+				<div id="identification" class="row field-block">
+			       	<div class="col-md-8"><label for="posX">ID</label><input class="form-control" id="id"/></div>
+			       	<div class="col-md-8"><label for="posY">Customer Name</label><input class="form-control"  id="name"/></div>
+			    </div>			    
+			    <div id="addressLocation" class="row field-block">
+			       	<div class="col-md-8"><label for="lat">Address</label><input class="form-control" id="street"/></div>
+			       	<div class="col-md-8"><label for="lng">Zip Code</label><input class="form-control" id="zipcode"/></div>
+			    </div>			    			    
+			    <div id="physicalLocation" class="row field-block">
+			        <div class="col-md-8"><label for="latMap">latitude</label><input class="form-control" id="latitude" /></div>
+			        <div class="col-md-8"><label for="lngMap">longitude</label><input class="form-control" id="longitude" /></div>
+			    </div>
+			    <div class="row field-block">
+			    <div class="col-md-4">			
+				  <!-- SUBMIT BUTTON -->
+				  <button type="submit" class="btn btn-success btn-lg btn-block">
+				      <span class="glyphicon glyphicon-flash"></span> Submit!
+				  </button>
+			  </div>
+			  </div>
+		    </form>
+		</div>
   	</div>

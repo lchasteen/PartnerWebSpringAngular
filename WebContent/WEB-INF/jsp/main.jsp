@@ -1,11 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
    <div class="col-md-16" >
    				<div class="panel panel-default">
    					<div class="panel-heading">Map Data</div>
 					<div class="row field-block">
 						<div class="col-md-6" id="map_canvas" class="panel panel-info" onclick="mapDivClicked(event);"></div>
-						<div class="col-md-6">
+						<!--  div class="col-md-6">
 						<div ng-controller="WithAjaxCtrl as showCase">
 						    <table datatable="ng" dt-options="showCase.dtOptions" dt-column-defs="showCase.dtColumnDefs" class="table row-border hover">
 						        <thead>
@@ -25,7 +23,7 @@
 						    </table>
 						</div>	
 							    
-						</div>
+						</div-->
 						
 					</div>
 					<div class="col-md-offset-1">
@@ -69,13 +67,11 @@
 							<table class="table"  ng-controller="display">
 						    	<tr>
 							    	<th>Name</th>
-							    	<th>Age</th>
-							    	<th>Date of Birth</th>
+							    	<th>Age</th>							    	
 						    	</tr>		  
-						  		<tr ng-repeat="p in listperson">
-									<td>{{p.name}}</td>
-									<td>{{p.age}}</td>
-									<td>{{p.DOB}}</td>
+						  		<tr ng-repeat="p in persons">
+									<td>{{p.firstName}}</td>
+									<td>{{p.lastName}}</td>									
 								</tr>
 							</table>			
 						</div>			

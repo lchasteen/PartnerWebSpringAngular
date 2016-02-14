@@ -5,7 +5,7 @@
 	<head>
 		<%@include  file="../../header.html"%>
 	</head>
-	<body>
+	<body ng-app="routeApp">
 		<%@include  file="../../html/nav.html" %>
 		  
 		<div class="container">
@@ -21,7 +21,7 @@
 		<script src="https://maps.googleapis.com/maps/api/js"></script>
 		<script src="js/map.js"></script>        
 		<script src="js/route.js"></script>   
-		<script src="DataTables/datables.min.js"></script>
+		<!--  script src="DataTables/datables.min.js"></script-->
 		   
 	    <script>$(document).ready( function(){
 	    	 initialize();   	
