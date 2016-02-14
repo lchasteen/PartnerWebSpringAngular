@@ -3,7 +3,7 @@
    					<div class="panel-heading">Map Data</div>
 					<div class="row field-block">
 						<div class="col-md-6" id="map_canvas" class="panel panel-info" onclick="mapDivClicked(event);"></div>
-						<!--  div class="col-md-6">
+						<div class="col-md-6">
 						<div ng-controller="WithAjaxCtrl as showCase">
 						    <table datatable="ng" dt-options="showCase.dtOptions" dt-column-defs="showCase.dtColumnDefs" class="table row-border hover">
 						        <thead>
@@ -23,7 +23,7 @@
 						    </table>
 						</div>	
 							    
-						</div-->
+						</div>
 						
 					</div>
 					<div class="col-md-offset-1">
